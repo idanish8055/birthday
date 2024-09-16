@@ -1,0 +1,44 @@
+@media screen and (max-width: 750px) {
+    canvas{
+        display: block;
+    }
+
+    .content-wrapper h1{
+        font-size: 2em;
+        top: 25%;
+        left: 0;
+        transform: none;
+        text-align: center;
+    }
+    .content-wrapper h2{
+        font-size: 3em;
+        top: 42%;
+        left: 0;
+        transform: none;
+        padding: 32px 18px;
+        text-align: center;
+        margin: 0;
+    }
+    .content-wrapper p{
+        font-size: 1.2em;
+        top: 56%;
+        left: 0;
+        padding: 24px;
+        text-align: center;
+        transform: none;
+        max-width: none;
+        width: unset;
+    }
+    .content-wrapper__mywish span {
+        font-size: 2em;
+        padding: 24px;
+    }
+
+}
+@media screen and (min-width: 750px) {
+    canvas{
+        object-fit: contain;
+        width: 100%;
+        display: block;
+    }
+}

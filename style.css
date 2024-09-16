@@ -1,0 +1,170 @@
+@import url('https://fonts.cdnfonts.com/css/breathing');
+
+main{
+    position: absolute;
+}
+.firework-wrapper{
+    position: relative;
+}
+h1, h2, .content-wrapper p{
+    position: absolute;
+    color: #fff;
+    font-family: 'Breathing', sans-serif;
+    -webkit-user-select: none;
+    user-select: none;
+    font-weight: 400;
+}
+
+.content-wrapper h1{
+    left: 50%;
+    top: 50%;
+    font-size: 3em;
+    transform: translate(-50%, -50%);
+}
+.content-wrapper h2{
+    left: 50%;
+    font-size: 5em;
+    top: 58%;
+    transform: translate(-50%, -50%);
+}
+.content-wrapper p{
+    left: 50%;
+    top: 75%;
+    font-size: 2em;
+    transform: translate(-50%, -50%);
+    max-width: 990px;
+    width: 100%;
+    font-family: cursive;
+}
+.content-wrapper__mywish span{
+    font-size: 4em;
+    color: #fff;
+    font-family: cursive;
+    -webkit-user-select: none;
+    user-select: none;
+    font-weight: 400;
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-wrapper__baloons img, .img-wrapper__cartoon img, .cake-img-man img{
+    width: 100%;
+    position: absolute;
+    top: 0; 
+}
+.img-wrapper__cartoon img{
+    max-width: 200px;
+    right: 0;
+}
+.cake-img-man img{
+    max-width: 200px;
+    right: 0;
+}
+.cake-wrapper{
+    margin-left: auto;
+    position: relative;
+    max-width: 990px;
+    width: 100%;
+    margin-right: auto;
+}
+audio{
+    display:none;
+}
+.card-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.mywish-content{
+    margin: 30px 0;
+}
+.content-wrapper__mywish{
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.cake-cutting__btn svg{
+    width: 42px;
+    height: 42px;
+}
+.cake-cutting__btn p{
+    font-size: 16px;
+    font-family: cursive;
+}
+.cake-cutting__btn{
+    padding: 18px;
+    border-radius: 10px;
+    background: #fff;
+    border: 2px solid #000;
+    text-align: center;
+    position: relative;
+    left: 40%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.balloon-border {
+    position: fixed;
+    top: 100%;
+    opacity: 0.5;
+    z-index: 9999;
+}
+.cake-cover {
+	margin-top: 50px;
+    margin-bottom: 50px;
+    height: 350px;
+}
+
+@keyframes changewidth {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+#dynamicContent {
+    white-space: nowrap;
+}
+.fw-semibold {
+    font-weight: 600 !important;
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+.cake-text{
+    width: 100%;
+    max-width: 990px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: cursive;
+    display: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cake-text .text-white {
+    color: #fff;
+    font-size: 5rem;
+    line-height: 1.2;
+}
+#dynamicContent{
+    color: yellow;
+}
+.step-2, .loading-more__wrapper{
+    display: none;
+}
+.loading-more__wrapper p{
+    color: #fff;
+    margin: 50px 0;
+    font-size: 1.2rem;
+}
