@@ -2,7 +2,6 @@
 const PI2 = Math.PI * 2
 const random = (min, max) => Math.random() * (max - min + 1) + min | 0
 const timestamp = _ => new Date().getTime()
-var gradient;
 
 // container
 class Birthday {
@@ -14,9 +13,7 @@ class Birthday {
     this.counter = 0
 
   }
-  resizeNew(){    
-    $("#canvas").outerHeight();
-  }
+  
   resize() {
     this.width = canvas.width = window.innerWidth
     let center = this.width / 2 | 0
@@ -26,7 +23,7 @@ class Birthday {
     this.height = canvas.height = window.innerHeight
     this.spawnC = this.height * .1
     this.spawnD = this.height * .5
-    console.log(window.innerWidth, window.innerHeight);
+    
   }
   
   onClick(evt) {
@@ -47,16 +44,8 @@ class Birthday {
   }
   
   update(delta) {
-    ctx.globalCompositeOperation = 'hard-light';
+    ctx.globalCompositeOperation = 'hard-light'
     ctx.fillStyle = `rgba(20,20,20,${ 7 * delta })`
-    // gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-    // gradient.addColorStop(0, "#1f0537");
-    // gradient.addColorStop(1, "#380c60");
-    // gradient.addColorStop(1, "#55108");
-    // gradient.addColorStop(1, "#7413bb");
-    // gradient.addColorStop(1, "#7413bb");
-
-
     ctx.fillRect(0, 0, this.width, this.height)
 
     ctx.globalCompositeOperation = 'lighter'
@@ -119,6 +108,7 @@ class Firework {
           let targetY = this.y + this.offsprings * Math.sin(PI2 * i / babies) | 0
 
           birthday.fireworks.push(new Firework(this.x, this.y, targetX, targetY, this.shade, 0))
+
         }
 
       }
@@ -151,18 +141,18 @@ let ctx = canvas.getContext('2d')
 let then = timestamp()
 
 let birthday = new Birthday
-window.onresize = () => {
-  setTimeout(()=>{
-    birthday.resize()
-  }, 500);
-}
+window.onload = () => birthday.resize()
 document.onclick = evt => birthday.onClick(evt)
-document.ontouchstart = evt => birthday.onClick(evt);
+document.ontouchstart = evt => birthday.onClick(evt)
 
-(function loop(){
+  ;(function loop(){
   	requestAnimationFrame(loop)
+
   	let now = timestamp()
   	let delta = now - then
+
     then = now
     birthday.update(delta / 1000)
-})()
+  	
+
+  })()

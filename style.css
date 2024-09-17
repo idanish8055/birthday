@@ -1,8 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/breathing');
 
-main{
+/* main{
     position: absolute;
-}
+} */
 .firework-wrapper{
     position: relative;
 }
@@ -49,9 +49,12 @@ h1, h2, .content-wrapper p{
     margin-left: auto;
     margin-right: auto;
 }
+.img-wrapper__baloons{
+    position: relative;
+}
 .img-wrapper__baloons img, .img-wrapper__cartoon img, .cake-img-man img{
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     top: 0; 
 }
 .img-wrapper__cartoon img{
