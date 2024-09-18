@@ -2,6 +2,9 @@
     canvas{
         display: block;
     }
+    .content-wrapper{
+        top: 32%;
+    }
 
     .content-wrapper h1{
         font-size: 2em;
@@ -10,35 +13,46 @@
         transform: none;
         text-align: center;
     }
+    h2.hpy-bday{
+        font-size: 1.5em;
+    }
+    h2.name-bday{
+        font-size: 2em;
+    }
     .content-wrapper h2{
-        font-size: 3em;
-        top: 42%;
-        left: 0;
+        /* font-size: 2em; */
+        margin: 0;
+        padding: 15px;
+        /* top: 42%;
+        left: 18%;
         transform: none;
         padding: 32px 18px;
         text-align: center;
-        margin: 0;
+        margin: 0; */
     }
     .content-wrapper p{
-        font-size: 1.2em;
-        top: 56%;
+        font-size: 0.9em;
         left: 0;
-        padding: 24px;
-        text-align: center;
-        transform: none;
-        max-width: none;
-        width: unset;
+        margin: 0;
     }
+    
     .content-wrapper__mywish span {
         font-size: 2em;
         padding: 24px;
     }
+    .cake-text .text-white{
+        font-size: 2rem;
+    }
 
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
     canvas{
-        object-fit: contain;
         width: 100%;
-        display: block;
+    }
+    .content-wrapper__mywish span{
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

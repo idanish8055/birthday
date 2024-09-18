@@ -15,7 +15,7 @@ $(document).ready(function(){
         $('.cake-wrapper .cake').fadeIn('slow');
         $('.cake-wrapper .fuego').fadeIn('slow');
         $('.cake-text').fadeIn('slow');
-        $('.balloon-border').animate({top:-500},8000);
+        $('.balloon-border').animate({top:-500},10000);
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".cake-wrapper").offset().top
         }, 2000);
@@ -27,7 +27,7 @@ $(document).ready(function(){
             $([document.documentElement, document.body]).animate({
                 scrollTop: $(".loading-more__wrapper").offset().top
             }, 2000);
-        }, 6000);
+        }, 6500);
         
         setTimeout(()=>{
             $(".loading-more__wrapper").fadeOut('slow').delay(5000);
@@ -41,7 +41,40 @@ $(document).ready(function(){
     $(".cards-enable-btn").click(function(){
         $(".step-2").fadeOut('slow').delay(5000);
         cardContainer.fadeIn('slow');
-    })
+    });
+
+    $(".card-btn").click(function(){
+        let nextCard = $(this).attr("next-data-card");
+        $(`[data-card-number="${nextCard}"]`).fadeIn('slow');
+        $(this).fadeOut('slow').delay(5000);
+    });
+
+    $('.final-msg').click(function(){
+		$(this).fadeOut('slow');
+		// $('.cake').fadeOut('fast').promise().done(function(){
+		// 	$('.message').fadeIn('slow');
+		// });
+		
+		var i;
+
+		function msgLoop (i) {
+			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+                i=i+1;
+                $("p:nth-child("+i+")").fadeIn('slow').delay(1000);
+                if(i==50){
+                    $("p:nth-child(49)").fadeOut('slow').promise().done(function () {
+                        $('.cake').fadeIn('fast');
+                    });
+                    
+                }
+                else{
+                    msgLoop(i);
+                }			
+		    });
+		}
+		
+		msgLoop(0);
+	});
 });
 
 // Ribbon celebration
@@ -86,11 +119,11 @@ function cakeText(){
         // display second text
         setTimeout(() => {
             document.querySelector('#dynamicContent').innerText = secondText;
-        }, intervalTime * 3);
+        }, intervalTime * 5);
         // display third text
         setTimeout(() => {
             document.querySelector('#dynamicContent').innerText = thirdText;
-        }, intervalTime * 5);
+        }, intervalTime * 7);
     }
 
     setInterval(() => {

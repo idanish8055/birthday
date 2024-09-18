@@ -2,167 +2,220 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./card/card.css">
   <link rel="stylesheet" href="./responsive.css">
+  <link rel="stylesheet" href="./card/card.css">
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js" crossorigin="anonymous"></script>
   <link rel="stylesheet/less" href="cake.less">
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <!-- Different songs for different songs -->
 <!-- 6 cards -->
 <body>
+  <div class="firework-wrapper">
+    <div>
+      <div class="img-wrapper__baloons">
+        <img src="./images/new-baloons.png"/>
+      </div>  
+      <canvas id="birthday"></canvas>
+    </div>
+    <div class="content-wrapper">
+      <h2 class="hpy-bday">Happy Birthday</h2>
+      <h2 class="name-bday">Muskan Diwedi</h2>
+      <p>May this day be as sunny as your smile and as beautiful as you are. You shine every day, but on this day, you will shine the brightest.</p>
+      <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
+
+    </div>
+  </div>
     <main>
-      <!-- <audio class="song" controls loop id="playAudio">
-        <source src="./audio/hbd.mp3" type="audio/mp3"></source>
-        Your browser isn't invited for super fun audio time.
-      </audio>
-      <button class="audio-btn" style="display:none;">Click</button> -->
-      <!-- Firework section -->
-      <section class="firework-wrapper">
-        <div>
-            <div class="content-wrapper">
-              <h1>Happy Birthday</h1>
-              <h2>Muskan Diwedi</h2>
-              <p>May this day be as sunny as your smile and as beautiful as you are. You shine every day, but on this day, you will shine the brightest.</p>
-            </div>
-            <div class="img-wrapper__baloons">
-              <img src="./images/8793602.png"/>
-            </div>
-            <!-- <canvas id="birthday"></canvas> -->
-        </div>
+      <section class="mywish-content container">
+        <p>I've been waiting for this day since a long time.😅 I know I'm not with you right now but I wanna celebrate it with you right now.😉</p>
+        <p>So, let's move to the next step.😘</p>
+        <button class="cake-cutting__btn cake-init">
+          <p>Click to blow the candle</p>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill:#FFA500;}
+            </style>
+            <g>
+              <path class="st0" d="M200.933,256.804l26.915-5.77c0,0-36.958-26.697-21.334-65.587c38.44,22.168,67.318-29.661,67.318-29.661   s26.659,44.833,7.943,81.768c-7.124,14.052,28.404,3.972,28.404,3.972C400.943,123.682,245.728,70.055,257.599,0   c0,0-45.218,47.909-18.332,102.484c13.578,27.569,9.327,49.339-14.796,49.271c-39.447-0.106-2.325-79.827-14.413-64.286   C151.075,130.136,144.779,233.29,200.933,256.804z"/>
+              <path class="st0" d="M331.212,439.303c-3.543-10.892-16.338-57.734-3.272-103.492c9.952-34.79,3.942-60.298-7.35-53.679   c2.708-10.621-20.987-14.676-54.868-9.26c-0.135-5.754-0.406-11.095-0.955-16.571c-1.098-10.893-16.346-5.447-17.429,2.181   c0,0,0.482,8.327,0.993,17.7c-21.1,4.378-69.047,14.992-56.003,23.688c11.915,7.944,67.106,12.307,102.108,0.917   c-48.015,27.637-93.472,16.512-105.162,13.24c-6.792-1.903-8.485,8.041-6.153,18.596c-0.015-0.023-0.06-0.076-0.06-0.076   c0.046,0.142,0.12,0.399,0.174,0.579c0.292,1.249,0.639,2.498,1.038,3.732c3.475,13.554,11.028,50.76,5.333,69.769   c-6.153,20.468,24.252,35.136,29.751-8.342c4.581-2.978,9.2-6.65,13.819-11.268c-4.213,42.11-19.107,53.664-33.618,53.649   c-2.167,9.854-5.085,18.874-8.861,25.862c-0.106,0.196-0.166,0.391-0.264,0.587c-17.85,3.288-38.371,19.325-20.43,35.37   c11.818,10.569,66.587,11.54,112.233,6.793c7.274-0.414,14.751-1.407,22.304-2.912c23.808-3.836,41.568-9.365,43.012-15.864   C357.013,485.099,334.747,450.195,331.212,439.303z"/>
+            </g>
+            </svg>
+        </button>
       </section>
 
-      <!-- Firework section end -->
-
-      <!-- Mywish section end -->
-      <section class="mywish-content">
-        <div class="content-wrapper__mywish">
-          <span>I've beem waiting for this day since a long time.😅 I know I'm not with you right now but I wanna celebrate it with you right now.😉</span>
-          <span>I'm kinda excited, let's move to the next step.😘</span>
-          
-          <button class="cake-cutting__btn cake-init">
-            <p>Click to blow the candle</p>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="800px" width="800px" version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve">
-              <style type="text/css">
-                .st0{fill:#FFA500;}
-              </style>
-              <g>
-                <path class="st0" d="M200.933,256.804l26.915-5.77c0,0-36.958-26.697-21.334-65.587c38.44,22.168,67.318-29.661,67.318-29.661   s26.659,44.833,7.943,81.768c-7.124,14.052,28.404,3.972,28.404,3.972C400.943,123.682,245.728,70.055,257.599,0   c0,0-45.218,47.909-18.332,102.484c13.578,27.569,9.327,49.339-14.796,49.271c-39.447-0.106-2.325-79.827-14.413-64.286   C151.075,130.136,144.779,233.29,200.933,256.804z"/>
-                <path class="st0" d="M331.212,439.303c-3.543-10.892-16.338-57.734-3.272-103.492c9.952-34.79,3.942-60.298-7.35-53.679   c2.708-10.621-20.987-14.676-54.868-9.26c-0.135-5.754-0.406-11.095-0.955-16.571c-1.098-10.893-16.346-5.447-17.429,2.181   c0,0,0.482,8.327,0.993,17.7c-21.1,4.378-69.047,14.992-56.003,23.688c11.915,7.944,67.106,12.307,102.108,0.917   c-48.015,27.637-93.472,16.512-105.162,13.24c-6.792-1.903-8.485,8.041-6.153,18.596c-0.015-0.023-0.06-0.076-0.06-0.076   c0.046,0.142,0.12,0.399,0.174,0.579c0.292,1.249,0.639,2.498,1.038,3.732c3.475,13.554,11.028,50.76,5.333,69.769   c-6.153,20.468,24.252,35.136,29.751-8.342c4.581-2.978,9.2-6.65,13.819-11.268c-4.213,42.11-19.107,53.664-33.618,53.649   c-2.167,9.854-5.085,18.874-8.861,25.862c-0.106,0.196-0.166,0.391-0.264,0.587c-17.85,3.288-38.371,19.325-20.43,35.37   c11.818,10.569,66.587,11.54,112.233,6.793c7.274-0.414,14.751-1.407,22.304-2.912c23.808-3.836,41.568-9.365,43.012-15.864   C357.013,485.099,334.747,450.195,331.212,439.303z"/>
-              </g>
-              </svg>
-          </button>
-          <p></p>
-        </div>
-      </section>
-      <!-- Mywish section end -->
-
-      <!-- Cake make over section -->
-      <section class="cake-wrapper">
-        <div class="row cake-cover">
-          <div class="col-md-12 texr-center">
-            <div class="cake">
-              <div class="velas">
-                <div class="fuego"></div>
-                <div class="fuego"></div>
-                <div class="fuego"></div>
-                <div class="fuego"></div>
-                <div class="fuego"></div>
-              </div>
-              <div class="cobertura"></div>
-              <div class="bizcocho"></div>
-            </div>
+      <section class="cake-wrapper container">
+        <div class="cake">
+          <div class="velas">
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
+            <div class="fuego"></div>
           </div>
+          <div class="cobertura"></div>
+          <div class="bizcocho"></div>
         </div>
       </section>
 
-      <section class="cake-text bg-dark vh-100">
-        <div class="container text-white d-flex flex-column justify-content-center vh-100 display-1 fw-semibold">
+      <section class="cake-text container">
+        <div class="text-white d-flex flex-column">
           <div>Happy birthday <div id="dynamicContent" class="overflow-hidden">You😘</div></div>
         </div>
       </section>
+
       <section class="loading-more__wrapper">
         <p>loading more things, hold on please...😉</p>
       </section>
 
-      <section class="step-2 content-wrapper__mywish">
-        <span>It's not over yet madam jiiiiiiii, picture abhi baki h😘</span>
-        <button class="cake-cutting__btn cards-enable-btn">
-          <p>Fatak se ispe click karo</p>         
-        </button>
+      <section class="step-2">
+        <div class="content-wrapper__mywish">
+          <span>It's not over yet madam jiiiiiiii, picture abhi baki h😘</span>
+          <button class="cake-cutting__btn cards-enable-btn">
+            <p>Fatak se ispe click karo</p>         
+          </button>
+        </div>
       </section>
 
       <img src="./images/Balloon-Border.png" width="100%" class="balloon-border">
 
-      <!-- section end -->
-
       <!-- Cards section end -->
-      <section class="card-sections">
-        <div id="card-wrapper__main">
-          <div class="card-container">
+      <section class="card-sections container">
+        <div class="card-container">
+          <div class="card-main__wrapper">
             <div class="card-wrapper">
-              <div class="card">
-                <div class="back"></div>
-                <div class="front">
-                  <div class="imgset">
-                    <img width="100%" src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png">
-                  </div>
+              <div class="back"></div>
+              <div class="front">
+                <div class="imgset">
+                  <img width="100%" src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png">
                 </div>
-                
-                <div class="text-container">
-                  <p id="head">Happy Birthday அத்தான்!</p>
-                  <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
-                  <p>Hope your day goes great!</p>
-                </div>
+              </div>
+              <div class="text-container">
+                <p id="head">Happy Birthday அத்தான்!</p>
+                <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
+                <p>Hope your day goes great!</p>
               </div>
             </div>
-            <div class="card-wrapper">
-              <div class="card">
-                <div class="back"></div>
-                <div class="front">
-                  <div class="imgset">
-                    <img width="100%" src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png">
-                  </div>
-                </div>
-                <div class="text-container">
-                  <p id="head">Happy Birthday அத்தான்!</p>
-                  <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
-                  <p>Hope your day goes great!</p>
-                </div>
-              </div>
-            </div>
-            <div class="card-wrapper">
-              <div class="card">
-                <div class="back"></div>
-                <div class="front">
-                  <div class="imgset">
-                    <img width="100%" src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png">
-                  </div>
-                </div>
-                <div class="text-container">
-                  <p id="head">Happy Birthday அத்தான்!</p>
-                  <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
-                  <p>Hope your day goes great!</p>
-                </div>
-              </div>
+            <div class="btn-wrapper card-btn" next-data-card="2">
+              <button class="cake-cutting__btn">About you ❤️</button>
             </div>
           </div>
-        </div>
+          <div class="card-main__wrapper" style="display:none;" data-card-number="2">
+            <div class="card-wrapper" >
+              <div class="back"></div>
+              <div class="front">
+                <div class="imgset">
+                  <img width="100%" src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png">
+                </div>
+              </div>
+              <div class="text-container">
+                <p id="head">Happy Birthday அத்தான்!</p>
+                <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
+                <p>Hope your day goes great!</p>
+              </div>
+            </div>
+            <div class="btn-wrapper card-btn" next-data-card="3">
+              <button class="cake-cutting__btn">More about you ❤️</button>
+            </div>
+          </div>
+          <div class="card-main__wrapper" style="display:none;" data-card-number="3">
+            <div class="card-wrapper">
+              <div class="back"></div>
+              <div class="front">
+                <div class="imgset">
+                  <img width="100%" src="https://1.bp.blogspot.com/-Mgj9-rbs65E/XfMoPSD5gtI/AAAAAAAAURk/NBokE2gSS2cTSJ2em5lZ5hJDuTtRN7UVwCLcBGAsYHQ/s1600/2713997.png">
+                </div>
+              </div>
+              <div class="text-container">
+                <p id="head">Happy Birthday அத்தான்!</p>
+                <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
+                <p>Hope your day goes great!</p>
+              </div>
+            </div>
+            <div class="btn-wrapper final-msg" next-data-card="final">
+              <button class="cake-cutting__btn">Something more ❤️</button>
+            </div>
+          </div>
+        </div> 
       </section>
       <!-- Cards section end -->
 
+      <section class="container">
+        <div class="message">
+          <div class="col-md-12">
+            <p>Today is...</p>
+            <p>as beautiful as other days</p>
+            <p>but you realize</p>
+            <p>another year has gone</p>
+            <p>in a blink of the eyes</p>
+            <p><strong>however</strong></p>
+            <p>Do you know..?</p>
+            <p>today is just special</p>
+            <p>so special to you</p>
+            <p>that's why</p>
+            <p>Let's make it...</p>
+            <p>the best celebration ever</p>
+            <p>and let me share...</p>
+            <p>a piece of happiness to you</p>
+            <p>I made all this...</p>
+            <p>as a birthday present to you</p>
+            <p>thanks for being there</p>
+            <p>thanks for the friendship we made</p>
+            <p>thanks for everything</p>
+            <p>I wish you all the best</p>
+            <p>May your life be at ease</p>
+            <p>May all your wishes come true</p>
+            <p>Remember</p>
+            <p>your ambitions</p>
+            <p>you live as a free bird...</p>
+            <p>flying in the blue sky</p>
+            <p>Now things are different...</p>
+            <p>real story of your life</p>
+            <p>is just about to begin</p>
+            <p>indeed..</p>
+            <p>but...</p>
+            <p>don't worry</p>
+            <p>because...</p>
+            <p>God has your back</p>
+            <p>and</p>
+            <p>this year will be better</p>
+            <p>and I hope</p>
+            <p>you'll find...</p>
+            <p>happiness along the way</p>
+            <p>keep your spirit up</p>
+            <p>enjoy every single moment...</p>
+            <p>that you experience today</p>
+            <p>fill it with your most beautiful smile</p>
+            <p>and make it the best memory..</p>
+            <p>lastly...</p>
+            <p>I'd like to wish you one more time</p>
+            <p>a very happy birthday Muskan ❤️</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="blessings container" style="display:none;">
+        <p>
+          Thank you so much for everything. Blessed to have you in my life ❤️🥰😍
+        </p>
+        <p>🎁👈Excited? Me too😬</p>
+      </section>
+      
       <section class="ribbon-celebration">
         
         <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
        </section>    
-      </main>
-    <!-- <script src="./base.js"></script> -->
+    </main>
+    <script src="./base.js"></script>
     <script src="./custom.js" ></script>
-</body>
+  </body>
 </html>
