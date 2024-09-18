@@ -32,7 +32,7 @@ h2.name-bday{
 }
 .content-wrapper p{
     font-size: 1.2em;
-    font-family: cursive;
+    font-family: emoji;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -41,7 +41,7 @@ h2.name-bday{
 .content-wrapper__mywish span{
     font-size: 4em;
     color: #fff;
-    font-family: cursive;
+    font-family: emoji;
     position: relative; 
 }
 .img-wrapper__baloons{
@@ -108,7 +108,7 @@ audio{
 }
 .cake-cutting__btn{
     font-size: 16px;
-    font-family: cursive;
+    font-family: emoji;
     padding: 18px;
     border-radius: 10px;
     background: #fff;
@@ -164,7 +164,7 @@ audio{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-family: cursive;
+    font-family: emoji;
     display: none;
     margin-top: 35px;
     margin-bottom: 35px;
@@ -186,8 +186,8 @@ audio{
     font-size: 1.2rem;
 }
 .message {
-	margin-top: 54px;
-    height: 50px;
+	margin: 54px 0;
+    height: 80px;
 }
 .message p {
 	font-size: 30px;

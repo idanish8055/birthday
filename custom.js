@@ -65,7 +65,7 @@ $(document).ready(function(){
                     $("p:nth-child(49)").fadeOut('slow').promise().done(function () {
                         $('.cake').fadeIn('fast');
                     });
-                    
+                    $(".blessings").fadeIn('slow');
                 }
                 else{
                     msgLoop(i);
