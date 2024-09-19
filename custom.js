@@ -68,6 +68,9 @@ $(document).ready(function(){
                         $('.cake').fadeIn('fast');
                     });
                     $(".blessings").fadeIn('slow');
+                    $([document.documentElement, document.body]).animate({
+                        scrollTop: $(".blessings").offset().top
+                    }, 2000);
                 }
                 else{
                     msgLoop(i);
