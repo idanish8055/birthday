@@ -19,10 +19,10 @@ h2, .content-wrapper p{
     font-size: 3em;
 }
 h2.hpy-bday{
-    font-size: 5em;
+    font-size: 3em;
 }
 h2.name-bday{
-    font-size: 3em;
+    font-size: 2em;
 }
 .content-wrapper h2{
     /* left: 50%; */
@@ -31,7 +31,7 @@ h2.name-bday{
     padding: 15px;
 }
 .content-wrapper p{
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: emoji;
     width: 100%;
     margin-right: auto;
