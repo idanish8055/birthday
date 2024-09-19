@@ -43,6 +43,20 @@
     .cake-text .text-white{
         font-size: 2rem;
     }
+    .text-white p{
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+
+    .card-wrapper .text-container #head {
+        font-size: 1.5em;
+        margin: 20px auto 20px auto;
+    }
+   .card-wrapper p {
+        font-size: 1em;
+        line-height: 1;
+        margin: 15px auto 0px auto;
+    }
 
 }
 @media screen and (min-width: 990px) {

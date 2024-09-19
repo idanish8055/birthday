@@ -15,12 +15,12 @@ class Birthday {
   }
   
   resize() {
-    this.width = canvas.width = window.innerWidth
+    this.width = canvasBanner.width = window.innerWidth
     let center = this.width / 2 | 0
     this.spawnA = center - center / 4 | 0
     this.spawnB = center + center / 4 | 0
     
-    this.height = canvas.height = window.innerHeight
+    this.height = canvasBanner.height = window.innerHeight
     this.spawnC = this.height * .1
     this.spawnD = this.height * .5
     
@@ -135,8 +135,8 @@ class Firework {
   }
 }
 
-let canvas = document.getElementById('birthday')
-let ctx = canvas.getContext('2d')
+let canvasBanner = document.getElementById('birthday')
+let ctx = canvasBanner.getContext('2d')
 
 let then = timestamp()
 

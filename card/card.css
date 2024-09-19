@@ -22,9 +22,9 @@ background-position: center; /* Center the image */
 	 background-color: #e6f0e6;
 }
  .card-wrapper .text-container {
-	 width: 80%;
-	 height: 80%;
-	 margin: auto;
+	 width: 95%;
+	 height: 95%;
+	 /* margin: auto; */
 }
  .strikethrough {
 	 text-decoration: line-through;
@@ -32,7 +32,7 @@ background-position: center; /* Center the image */
  .card-wrapper .text-container #head {
 	 font-family: 'Nobile', sans-serif;
 	 font-size: 1.5em;
-	 margin: 60px auto 60px auto;
+	 margin: 20px auto 20px auto;
 }
  .card-wrapper p {
 	 font-size: 1.1em;
